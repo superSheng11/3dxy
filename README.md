@@ -7,6 +7,8 @@
 
 ## 效果部分展示
 <img src="https://github.com/superSheng11/3dxy/blob/master/static/11.gif" width="250"/>
+<img src="https://github.com/superSheng11/3dxy/blob/master/static/22.gif" width="250"/>
+<img src="https://github.com/superSheng11/3dxy/blob/master/static/33.gif" width="250"/>
 ``` bash
 # install dependencies
 npm install
