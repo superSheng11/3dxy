@@ -1,0 +1,33 @@
+@mixin nowrapper() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin border-1px($color: #000000, $type: all) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+        @if $type == all {
+            border: 0.5px solid $color;
+        } @else if $type == top {
+            border-top: 0.5px solid $color;
+        } @else if $type == bottom {
+            border-bottom: 0.5px solid $color;
+        } @else if $type == left {
+            border-left: 0.5px solid $color;
+        } @else if $type == right {
+            border-right: 0.5px solid $color;
+        }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        @if $type == all {
+            border: 0.333333px solid $color;
+        } @else if $type == top {
+            border-top: 0.333333px solid $color;
+        } @else if $type == bottom {
+            border-bottom: 0.333333px solid $color;
+        } @else if $type == left {
+            border-left: 0.333333px solid $color;
+        } @else if $type == right {
+            border-right: 0.333333px solid $color;
+        }
+    }
+}
